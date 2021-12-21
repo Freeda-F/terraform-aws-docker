@@ -55,7 +55,7 @@ variable "vpc-id" {
 }
 
 variable "cert-arn" {
-    default = "arn:aws:acm:ap-south-1:384463163042:certificate/a242aa35-9925-4696-871e-85bde31c188f" #----------Provide SSL cert ARN here--------#
+    default = "arn:aws:acm:ap-south-1" #----------Provide SSL cert ARN here--------#
   
 }
 ```

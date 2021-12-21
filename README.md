@@ -106,17 +106,29 @@ Once the changes in these files have been made, we can provision the application
 
 ## Provisioning
 
-Navigate to the project directory where the required files are already modified and do the following.
-
-1. Apply 'terraform init' command which is used to initialize a working directory containing Terraform configuration files.
+1. Navigate to the project directory where the required files are already modified and clone the repository.
+```
+git clone https://github.com/Freeda-F/terraform-aws-docker.git
+cd terraform-aws-docker
+```
+2. Apply 'terraform init' command which is used to initialize a working directory containing Terraform configuration files.
 ```
 $ terraform init
 ```
-Then, use 'terraform plan' command to create an execution plan and then use 'terraform apply' to execute the plan. 
+3. Then, use 'terraform plan' command to create an execution plan and then use 'terraform apply' to execute the plan. 
 ```
 $ terraform plan
 $ terraform apply
 ```
 
 ## Result
-![image](https://user-images.githubusercontent.com/93197553/146998694-361c9b90-4f27-4f2f-95d7-66732152ac30.png)
+
+Once the build has been completed successfully, you will have a containerized web application which provides geolocation of a given IP address. You can access the web application via a loadbalancer DNS like given below.
+
+Example : http://ipstack-lb-1301061077.ap-south-1.elb.amazonaws.com/123.45.6.7
+
+![image](https://user-images.githubusercontent.com/93197553/147000687-eb672b75-9bf1-457e-bd83-abbde4f91241.png)
+
+![image](https://user-images.githubusercontent.com/93197553/147000754-fe6e0286-4af1-4d03-9e13-e35ff92625de.png)
+
+This application can also work in HTTPS if the load balancer DNS name is given for a valid domain with a valid SSL certificate.

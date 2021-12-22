@@ -20,6 +20,8 @@ This terraform script will provision the following :
 - [Terraform v1.0.11](https://www.terraform.io/downloads.html)
 - IAM user with administrator access to EC2.
 - A valid SSL certificate which has been already imported to ACM.
+- [Install docker](https://docs.docker.com/engine/install/)
+- [Install docker-compose](https://docs.docker.com/compose/install/)
 
 ## Usage
 

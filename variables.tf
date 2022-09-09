@@ -16,7 +16,7 @@ variable "ami-id" {
 }
 
 variable "type" {
-    default = "t2.micro"
+    default = "xt2.micro"
   
 }
 variable "project" {
